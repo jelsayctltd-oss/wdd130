@@ -28,3 +28,7 @@ p {
 body {
     background-color: lightblue;
 }
+
+main {
+    max-width: 840px;
+}
