@@ -19,6 +19,19 @@ body {
     line-height: 1.5;
 }
 
+header {
+    background-color: white;
+    padding: 12px 0 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+header > img {
+    display: block;
+    width: 110px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
 header,
 main,
 footer {
@@ -26,30 +39,23 @@ footer {
     margin: 0 auto;
 }
 
-header {
+header nav ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-}
-
-header img {
-    width: 100px;
-    height: auto;
-}
-
-nav ul {
-    display: flex;
+    flex-direction: column;
+    gap: 2px;
     list-style: none;
-    gap: 20px;
+    padding-left: 8px;
 }
 
-nav a {
-    color: white;
+header nav a {
+    color: var(--primary-color);
     text-decoration: none;
-    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+header nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 nav a:hover {
@@ -71,10 +77,10 @@ article {
 
 .hero {
     position: relative;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
@@ -83,68 +89,98 @@ article {
 h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     text-align: center;
     opacity: 0.7;
-    background-color: rgba(38, 70, 83, 0.85);
+    background-color: rgba(38, 59, 109, 0.88);
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
 }
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
     margin: 0;
-    padding: 15px;
-    background-color: rgba(38, 70, 83, 0.85);
+    padding: 14px 18px;
+    background-color: rgba(29, 59, 109, 0.88);
     color: white;
+    min-height: 95px;
     overflow: auto;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    height: auto;
-    margin-left: 15px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 0 0 18px;
     border: 2px solid white;
 }
 
 .hero article p {
     margin: 0;
     padding: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
 section {
-    margin: 0;
-    padding: 15px;
+    margin: 20px 0;
+    padding: 0;
 }
 
-.socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    margin-top: 10px 0;
+section h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
 }
 
-.socialmedia {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+section p {
+    padding: 0 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+    margin-top: 25px;
+    padding: 10px 0;
     border-top: 1px solid #ccc;
+    text-align: left;
 }
 
 footer p {
     margin: 0;
     padding: 0;
     font-size: 0.85rem;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+footer .socialmedia a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+footer .socialmedia img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
 }
