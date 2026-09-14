@@ -1,19 +1,10 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
+    --primary-color: #1d3b6d;
     --secondary-color: #f4a261;
-    /* Warm sand */
     --accent1-color: #264653;
-    /* dark slate blue */
     --accent2-color: #e9c46a;
-    /* Light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", "serif";
+    --heading-font: "Trebuchet MS", "Arial", "san-serif";
     --body-font: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 * {
@@ -25,6 +16,7 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    line-height: 1.5;
 }
 
 header,
@@ -34,13 +26,42 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color)
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav,
 p,
 section,
 article {
@@ -48,12 +69,9 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
 .hero img {
@@ -69,16 +87,64 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-    /* white text - make sure there is enough contrast with the background-color */
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
+    font-size: 2rem;
 }
 
-article {
+.hero article {
     position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
+    overflow: auto;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    height: auto;
+    margin-left: 15px;
+    border: 2px solid white;
+}
+
+.hero article p {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 15px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px 0;
+}
+
+.socialmedia {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
 }
