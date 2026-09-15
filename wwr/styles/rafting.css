@@ -2,7 +2,6 @@
     --primary-color: #1d3b6d;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
     --heading-font: "Trebuchet MS", Arial, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -56,7 +55,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 
