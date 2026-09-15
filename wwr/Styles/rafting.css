@@ -3,7 +3,7 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Trebuchet MS", "Arial", "san-serif";
+    --heading-font: "Trebuchet MS", Arial, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -19,6 +19,15 @@ body {
     line-height: 1.5;
 }
 
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+
 header {
     background-color: white;
     padding: 12px 0 8px;
@@ -30,13 +39,6 @@ header > img {
     width: 110px;
     height: auto;
     margin-bottom: 8px;
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
 }
 
 header nav ul {
@@ -58,9 +60,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-nav a:hover {
-    color: var(--accent2-color)
-}
+/* Headings */
 
 h1,
 h2 {
@@ -68,12 +68,7 @@ h2 {
     color: var(--primary-color);
 }
 
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
+/* Hero section */
 
 .hero {
     position: relative;
@@ -86,15 +81,14 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     left: 0;
     width: 100%;
     padding: 14px;
     text-align: center;
-    opacity: 0.7;
-    background-color: rgba(38, 59, 109, 0.88);
+    background-color: rgba(29, 59, 109, 0.88);
     color: white;
     font-size: 1.8rem;
     letter-spacing: 0.5px;
@@ -129,6 +123,8 @@ h1 {
     line-height: 1.4;
 }
 
+/* Main sections */
+
 section {
     margin: 20px 0;
     padding: 0;
@@ -148,6 +144,8 @@ section p {
     font-size: 0.9rem;
     line-height: 1.6;
 }
+
+/* Footer */
 
 footer {
     margin-top: 25px;
