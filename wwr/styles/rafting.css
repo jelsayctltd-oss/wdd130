@@ -29,6 +29,9 @@ footer {
 /* Header */
 
 header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
     background-color: white;
     padding: 12px 0 8px;
     border-bottom: 1px solid #ddd;
@@ -38,15 +41,15 @@ header > img {
     display: block;
     width: 110px;
     height: auto;
-    margin-bottom: 8px;
 }
 
 header nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
     list-style: none;
-    padding-left: 8px;
+    padding-left: 0;
 }
 
 header nav a {
