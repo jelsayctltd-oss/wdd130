@@ -148,6 +148,19 @@ section p {
     line-height: 1.6;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Footer */
 
 footer {
