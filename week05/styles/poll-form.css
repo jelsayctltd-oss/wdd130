@@ -27,9 +27,24 @@ form {
     width: 650px;
     margin: 0 auto;
     padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
-    background: #eee;
+    background-color: #eee;
     display: grid;
+}
+
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
 }
 
 label,
@@ -58,25 +73,6 @@ input[type="checkbox"] {
     vertical-align: bottom;
 }
 
-button {
-    margin: 1rem;
-    background-color: navy;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.75rem;
-    font-size: 1.2rem;
-}
-
-footer {
-    margin: 1rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8em;
-    color: #777;
-    border-top: 1px solid #ccc;
-}
-
 .form-item {
     display: grid;
     align-items: center;
@@ -89,4 +85,35 @@ footer {
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+}
+
+.form-item label[for="feedback"] {
+    text-align: center;
+    padding-right: 0;
+}
+
+button {
+    justify-self: center;
+    width: 120px;
+    margin: 1rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
 }
