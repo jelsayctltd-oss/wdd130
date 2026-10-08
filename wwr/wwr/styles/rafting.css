@@ -587,3 +587,12 @@ footer .socialmedia img {
 .trip-table tr:nth-child(even) {
     background-color: #f8f8f8;
 }
+
+.trips-cta {
+    text-align: center;
+    padding: 10px 20px 20px;
+}
+
+.trips-cta p {
+    margin-bottom: 15px;
+}
